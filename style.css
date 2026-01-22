@@ -10,6 +10,11 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
 .container {
     max-width: 800px;
@@ -99,4 +104,84 @@ h2:hover {
 .favorites-table td {
     color: #333;
     line-height: 1.4;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+    border: 2px solid transparent;
+}
+
+.github-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.github-link:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.link-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.github-link:hover .link-icon {
+    transform: scale(1.1);
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-content {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.image-content img {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .text-content {
+        min-width: auto;
+    }
+    
+    .image-content {
+        order: -1; /* Image appears first on mobile */
+    }
 }
