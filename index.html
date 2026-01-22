@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biography - Blyte P Hinay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Biography</h1>
+            <p>Hi, my name is Blyte P Hinay, a Second Year Information Technology student. Nice to meet you!</p>
+        </header>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <div class="content">
+                <p>Hello! My name is <strong>Blyte Hinay</strong>. I am an <em>Information Technology student</em> who enjoys learning about web development and programming. I also love gacha gambling, listening to music, and more.</p>
+                <p>My favorite thing to do when there are school tasks is playing games or setting my game to macro. My favorite platforms are YouTube and Roblox.</p>
+                <p>I believe that <strong>hard work</strong> and consistency are the key to success!</p>
+                <img src="ME.jpg" alt="Blyte Hinay" width="200" height="200">
+            </div>
+            <button onclick="toggleSection(this)">Toggle Section</button>
+        </div>
+
+        <div class="section">
+            <h2>My Hobbies</h2>
+            <div class="content">
+                <ul>
+                    <li>Gaming</li>
+                    <li>Listening to Music</li>
+                    <li>Sleeping</li>
+                    <li>Watching Netflix</li>
+                    <li>Learning new things</li>
+                </ul>
+            </div>
+            <button onclick="toggleSection(this)">Toggle Section</button>
+        </div>
+
+        <div class="section">
+            <h2>My Daily Routine</h2>
+            <div class="content">
+                <ol>
+                    <li>Waking up</li>
+                    <li>Check the Macro</li>
+                    <li>Getting prepared to go to UM</li>
+                    <li>Eat after taking a bath</li>
+                    <li>Walking to the nearest spawnpoint of jeep in our area</li>
+                    <li>Getting out of jeep to ride DC bus</li>
+                    <li>Getting to UM and go to classroom</li>
+                    <li>After class, go home or wait for DC bus</li>
+                </ol>
+            </div>
+            <button onclick="toggleSection(this)">Toggle Section</button>
+        </div>
+
+        <div class="section">
+            <h2>Favorite Quote</h2>
+            <div class="content">
+                <p><em>"With great power comes great responsibility"</em> - Uncle Ben</p>
+            </div>
+            <button onclick="toggleSection(this)">Toggle Section</button>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <div class="content">
+                <p>You can find me on GitHub here:</p>
+                <a href="https://github.com/codenoobie25" target="_blank">Visit Here!</a>
+            </div>
+            <button onclick="toggleSection(this)">Toggle Section</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(button) {
+            const section = button.parentElement;
+            const content = section.querySelector('.content');
+            content.classList.toggle('collapsed');
+        }
+    </script>
+</body>
+</html>
