@@ -160,7 +160,7 @@ h2:hover {
 }
 
 .image-content img {
-    border-radius: 15px;
+    border-radius: 100px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
     max-width: 100%;
@@ -279,4 +279,17 @@ h2:hover {
 .radio-option.selected {
     background: rgba(59, 130, 246, 0.15);
     border: 1px solid rgba(59, 130, 246, 0.3);
+}
+.Gallery-section{
+    display:inline;
+}
+
+.image-hover{
+    margin: 10px;
+}
+
+.image-hover:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+
 }
